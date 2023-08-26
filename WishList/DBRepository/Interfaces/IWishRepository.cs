@@ -7,9 +7,9 @@ namespace DBRepository.Interfaces
     public interface IWishRepository
     {
         Task<PageOfWishes<Wish>> GetWishes(int index, int pageSize);
-        Task<Wish> GetWish(int wishId);
-        Task AddWish(Wish wish);
-        Task DeleteWish(int wishId);
+        //Task<Wish> GetWish(int wishId);
+        //Task AddWish(Wish wish);
+        //Task DeleteWish(int wishId);
 
     }
 }
