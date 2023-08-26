@@ -17,12 +17,12 @@ namespace DBRepository.Repositories
         {
             var result = new PageOfWishes<Wish>() { CurrentPage = index, PageSize = pageSize };
 
-            using (var context = ContextFactory.CreateDbContext(ConnectionString)) // 1
+            using (var context = ContextFactory.CreateDbContext(ConnectionString))
             {
                 IQueryable<Wish> query = context.Wishes.AsQueryable();
                 result.TotalPages = await query.CountAsync();
-                query = query.Include(p => p.Description).Include(p => p.Image).OrderByDescending(p => p.Date).Skip(index * pageSize).Take(pageSize); // 2
-                result.Wishes = await query.ToListAsync(); //3
+                query = query.Include(p => p.Description).Include(p => p.Image).OrderByDescending(p => p.Date).Skip(index * pageSize).Take(pageSize);
+                result.Wishes = await query.ToListAsync();
             }
 
             return result;
