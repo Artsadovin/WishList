@@ -15,6 +15,6 @@ namespace DBRepository
             
         }
 
-        DbSet<Wish> Wishes { get; set; }
+        public DbSet<Wish> Wishes { get; set; }
     }
 }

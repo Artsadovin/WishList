@@ -18,3 +18,4 @@ namespace WishList
             app.UseMvc();
         }
     }
+}
