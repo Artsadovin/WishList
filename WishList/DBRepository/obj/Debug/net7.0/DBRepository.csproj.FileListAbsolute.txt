@@ -13,3 +13,5 @@ C:\Users\user\Documents\practice\WishList\WishList\DBRepository\obj\Debug\net7.0
 C:\Users\user\Documents\practice\WishList\WishList\DBRepository\obj\Debug\net7.0\refint\DBRepository.dll
 C:\Users\user\Documents\practice\WishList\WishList\DBRepository\obj\Debug\net7.0\DBRepository.pdb
 C:\Users\user\Documents\practice\WishList\WishList\DBRepository\obj\Debug\net7.0\ref\DBRepository.dll
+C:\Users\user\Documents\practice\WishList\WishList\DBRepository\bin\Debug\net7.0\DBRepository.runtimeconfig.json
+C:\Users\user\Documents\practice\WishList\WishList\DBRepository\obj\Debug\net7.0\DBRepository.genruntimeconfig.cache

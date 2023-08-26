@@ -15,7 +15,6 @@ namespace WishList
 
         public void ConfigureServices(IServiceCollection services)
         {
-            
             //services.AddMvc();
             services.AddControllers();
             services.AddScoped<IRepositoryContextFactory, RepositoryContextFactory>(); // 1
