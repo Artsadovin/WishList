@@ -9,11 +9,15 @@ using System.Threading.Tasks;
 
 namespace Infrastructure
 {
-    public static void AddInfrastructureServices(this IServiceCollection services)
+    public static class DependencyInjection
     {
-        services.AddDbContext<ApplicationContext>();
-        services.AddScoped<INoteRepository, NoteRepository>();
-        services.AddScoped<IUnitOfWork>(sp => sp.GetService<ApplicationContext>());
+        public static void AddInfrastructureServices(this IServiceCollection services)
+        {
+            services.AddDbContext<ApplicationContext>();
+            services.AddScoped<INoteRepository, NoteRepository>();
+            services.AddScoped<IUnitOfWork>(sp => sp.GetService<ApplicationContext>());
 
+        }
     }
+    
 }

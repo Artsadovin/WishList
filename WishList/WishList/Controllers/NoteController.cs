@@ -7,6 +7,8 @@ using WishList.Converters;
 
 namespace WishList.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class NoteController : Controller
     {
         private readonly INoteRepository _noteRepository;
