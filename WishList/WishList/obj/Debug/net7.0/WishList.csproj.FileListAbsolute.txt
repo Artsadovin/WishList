@@ -1,0 +1,6 @@
+C:\Users\user\Documents\practice\WishList\WishList\WishList\obj\Debug\net7.0\WishList.csproj.AssemblyReference.cache
+C:\Users\user\Documents\practice\WishList\WishList\WishList\obj\Debug\net7.0\WishList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\practice\WishList\WishList\WishList\obj\Debug\net7.0\WishList.AssemblyInfoInputs.cache
+C:\Users\user\Documents\practice\WishList\WishList\WishList\obj\Debug\net7.0\WishList.AssemblyInfo.cs
+C:\Users\user\Documents\practice\WishList\WishList\WishList\obj\Debug\net7.0\WishList.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\practice\WishList\WishList\WishList\obj\Debug\net7.0\WishList.MvcApplicationPartsAssemblyInfo.cache
