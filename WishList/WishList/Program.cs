@@ -1,49 +1,36 @@
-﻿using DBRepository;
-using DBRepository.Interfaces;
-using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using System.IO;
-using System.Threading.Tasks;
-using WishList;
 
 namespace WishList
 {
     public class Program
     {
-        public static async Task Main(string[] args)
+        public static void Main(string[] args)
         {
-            var host = BuildWebHost(args);
-            /*
             var builder = WebApplication.CreateBuilder(args);
 
-            var config = builder.Build();
-           
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json");
-            var config = builder.Build();
+            // Add services to the container.
 
-            using (var scope = host.Services.CreateScope())
+            builder.Services.AddControllers();
+            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
+
+            var app = builder.Build();
+
+            // Configure the HTTP request pipeline.
+            if (app.Environment.IsDevelopment())
             {
-                var services = scope.ServiceProvider;
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
 
-                var factory = services.GetRequiredService<IRepositoryContextFactory>();
-                using (var context = factory.CreateDbContext(config.GetConnectionString("DefaultConnection")))
-                {
-                    await DbInitializer.Initialize(context);
-                }
-            }*/
+            app.UseHttpsRedirection();
 
-            host.Run();
+            app.UseAuthorization();
+
+
+            app.MapControllers();
+
+            app.Run();
         }
-
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
     }
 }
