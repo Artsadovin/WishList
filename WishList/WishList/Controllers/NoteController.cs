@@ -27,7 +27,7 @@ namespace WishList.Controllers
         }
 
         [HttpPost(Name = "AddNote")]
-        public IActionResult SaveUser(AddNoteDto noteDto)
+        public IActionResult SaveNote(AddNoteDto noteDto)
         {
             Note note = AddDtoNoteToNote.ConvertDtoToNote(noteDto);
             _noteRepository.AddNote(note);
