@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entity
 {
-    public class Note
+    public class Wish
     {
         public int Id { get; set; }
         public DateTime Created { get; set; }

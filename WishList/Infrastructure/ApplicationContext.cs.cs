@@ -2,12 +2,11 @@
 using Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
-using System.Collections.Generic;
 namespace Infrastructure
 {
     internal class ApplicationContext : DbContext, IUnitOfWork
     {
-        public DbSet<Note> Notes => Set<Note>();
+        public DbSet<Wish> Wishes => Set<Wish>();
         public ApplicationContext()
         {
             Database.EnsureCreated();

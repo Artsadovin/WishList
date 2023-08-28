@@ -1,6 +1,6 @@
 ﻿namespace WishList.DTO
 {
-    public class AddNoteDto
+    public class AddWishDto
     {
         public string Type { get; set; }
     }

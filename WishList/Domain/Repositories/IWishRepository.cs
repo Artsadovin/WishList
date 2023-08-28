@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Repositories
 {
-    public interface INoteRepository
+    public interface IWishRepository
     {
-        void AddNote(Note note);
-        List<Note> GetNotes();  
+        void AddWish(Wish wish);
+        List<Wish> GetWishes();  
     }
 }

@@ -8,23 +8,23 @@ using Domain.Repositories;
 
 namespace Infrastructure
 {
-    internal class NoteRepository : INoteRepository
+    internal class WishRepository : IWishRepository
     {
         private readonly ApplicationContext _context;
 
-        public NoteRepository(ApplicationContext context)
+        public WishRepository(ApplicationContext context)
         {
             _context = context;
         }
 
-        public void AddNote(Note note)
+        public void AddWish(Wish wish)
         {
-            _context.Notes.Add(note);
+            _context.Wishes.Add(wish);
         }
 
-        public List<Note> GetNotes()
+        public List<Wish> GetWishes()
         {
-            return _context.Notes.ToList();
+            return _context.Wishes.ToList();
         }
     }
 }

@@ -3,11 +3,11 @@ using WishList.DTO;
 
 namespace WishList.Converters
 {
-    public class AddDtoNoteToNote
+    public class AddDtoWishToWish
     {
-        public static Note ConvertDtoToNote(AddNoteDto dto)
+        public static Wish ConvertDtoToNote(AddWishDto dto)
         {
-            Note note = new Note();
+            Wish note = new Wish();
             note.Created = DateTime.Now;
             note.Type = dto.Type;
             return note;
