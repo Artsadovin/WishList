@@ -1,14 +1,14 @@
 export class ApiService {
 
-    static loadUsers(successFunction) {
-        ApiService.makeGetRequest("user", successFunction)
+    static loadWishes(successFunction) {
+        ApiService.makeGetRequest("wish", successFunction)
     }
 
-    static removeUser(userId, successFunction) {
-        ApiService.makeGetRequest(`user/${userId}/remove`, successFunction)
+    static removeWish(wishId, successFunction) {
+        ApiService.makeGetRequest(`wish/${wishId}/remove`, successFunction)
     }
 
-    static addUser(userName, userAge, successFunction) {
+    static addUser(wishType, userAge, successFunction) {
         ApiService.makePostRequest(`user`, { name: userName, age: userAge }, successFunction)
     }
 
