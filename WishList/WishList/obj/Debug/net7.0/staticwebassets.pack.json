@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\script\\api-service.js",
+      "PackagePath": "staticwebassets\\script\\api-service.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\script\\main.js",
+      "PackagePath": "staticwebassets\\script\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WishList.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WishList.props",
+      "PackagePath": "build\\WishList.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WishList.props",
+      "PackagePath": "buildMultiTargeting\\WishList.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WishList.props",
+      "PackagePath": "buildTransitive\\WishList.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

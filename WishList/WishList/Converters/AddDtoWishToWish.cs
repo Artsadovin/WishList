@@ -5,12 +5,11 @@ namespace WishList.Converters
 {
     public class AddDtoWishToWish
     {
-        public static Wish ConvertDtoToNote(AddWishDto dto)
+        public static Wish ConvertDtoToWish(AddWishDto dto)
         {
-            Wish note = new Wish();
-            note.Created = DateTime.Now;
-            note.Type = dto.Type;
-            return note;
+            Wish wish = new Wish();
+            wish.Type = dto.Type;
+            return wish;
         }
     }
 }

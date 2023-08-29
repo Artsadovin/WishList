@@ -1,3 +1,18 @@
 ﻿body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
 
+#wishes-list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.wish-card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 }

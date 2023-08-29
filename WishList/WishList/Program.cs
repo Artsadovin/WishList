@@ -1,4 +1,4 @@
-
+using Infrastructure;
 namespace WishList
 {
     public class Program
@@ -10,7 +10,7 @@ namespace WishList
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            builder.Services.AddInfrastructureServices();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -18,7 +18,7 @@ namespace WishList
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
-            }
+            } 
 
             app.UseHttpsRedirection();
 

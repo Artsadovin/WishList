@@ -29,7 +29,7 @@ namespace WishList.Controllers
         [HttpPost(Name = "AddWish")]
         public IActionResult SaveWish(AddWishDto wishDto)
         {
-            Wish wish = AddDtoWishToWish.ConvertDtoToWish(noteDto);
+            Wish wish = AddDtoWishToWish.ConvertDtoToWish(wishDto);
             _wishRepository.AddWish(wish);
             _unitOfWork.Commit();
 

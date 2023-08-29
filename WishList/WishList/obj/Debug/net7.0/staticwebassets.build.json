@@ -1,11 +1,88 @@
 {
   "Version": 1,
-  "Hash": "lHkdtUmSwTG+0Uo3PuyFw4QFVeVMxokJ9XzkMPu+7Uw=",
+  "Hash": "BtORGGoTiNK03tIjMyAqThbYlYPXtl6qEYB99kRwBCE=",
   "Source": "WishList",
   "BasePath": "_content/WishList",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "WishList\\wwwroot",
+      "Source": "WishList",
+      "ContentRoot": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\",
+      "BasePath": "_content/WishList",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\index.html",
+      "SourceId": "WishList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\",
+      "BasePath": "_content/WishList",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\script\\api-service.js",
+      "SourceId": "WishList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\",
+      "BasePath": "_content/WishList",
+      "RelativePath": "script/api-service.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script\\api-service.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\script\\main.js",
+      "SourceId": "WishList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\",
+      "BasePath": "_content/WishList",
+      "RelativePath": "script/main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\style.css",
+      "SourceId": "WishList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Documents\\practice\\WishList\\WishList\\WishList\\wwwroot\\",
+      "BasePath": "_content/WishList",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
+    }
+  ]
 }

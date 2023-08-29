@@ -11,5 +11,10 @@ namespace Domain.Entity
         public int Id { get; set; }
         public DateTime Created { get; set; }
         public string Type { get; set; }
+
+        public Wish() 
+        {
+            Created = DateTime.UtcNow;
+        }
     }
 }
