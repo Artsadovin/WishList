@@ -1,43 +1,41 @@
-import { ApiService } from "./api-service.js";
+import { ApiService } from "./api-service";
 
-let userCardTemplate = document.getElementById("user-card-template");
-let userCardsContainer = document.getElementById("users-list-container");
+let wishCardTemplate = document.getElementById("wish-card-template");
+let wishCardsContainer = document.getElementById("wishes-list-container");
 
-function reloadUsersList() {
-    let userCards = [];
+function reloadWishesList() {
+    let wishCards = [];
 
-    ApiService.loadUsers((response) => {
+    ApiService.loadWishes((response) => {
 
-        for (let user of response) {
-            let card = userCardTemplate.innerHTML;
+        for (let wish of response) {
+            let card = wishCardTemplate.innerHTML;
 
-            card = card.replaceAll("{name}", user.name);
-            card = card.replaceAll("{age}", user.age);
-            card = card.replaceAll("{userId}", user.id);
+            card = card.replaceAll("{date}", wish.created);
+            card = card.replaceAll("{type}", user.type);
 
-            card = `<div class="user-card">${card}</div>>`
+            card = `<div class="wish-card">${card}</div>>`
 
-            userCards.push(card);
+            wishCards.push(card);
         }
 
-        userCardsContainer.innerHTML = userCards.join();
+        wishCardsContainer.innerHTML = wishCards.join();
     });
 }
 
 
-function removeUser(userId) {
-    ApiService.removeUser(userId, reloadUsersList)
+function removeWish(wishId) {
+    ApiService.removeUser(wishId, reloadWishesList)
 }
 
-function addUser() {
-    const userName = $("#username-input").val();
-    const userAge = $("#age-input").val();
+function addWish() {
+    const type = $("#type-input").val();
 
-    ApiService.addUser(userName, userAge, reloadUsersList)
+    ApiService.addWish(type, reloadUsersList)
 }
 
-window.removeUser = removeUser;
-window.addUser = addUser;
+//window.removeWish = removeWish;
+//window.addWish = addWish;
 
 
-reloadUsersList();
+reloadWishesList();

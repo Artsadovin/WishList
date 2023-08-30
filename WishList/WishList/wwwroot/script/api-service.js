@@ -8,8 +8,8 @@ export class ApiService {
         ApiService.makeGetRequest(`wish/${wishId}/remove`, successFunction)
     }
 
-    static addUser(wishType, userAge, successFunction) {
-        ApiService.makePostRequest(`user`, { name: userName, age: userAge }, successFunction)
+    static addWish(wishType, successFunction) {
+        ApiService.makePostRequest(`wish`, { type: wishType }, successFunction)
     }
 
     static makeGetRequest(requestUrl, successFunction) {
