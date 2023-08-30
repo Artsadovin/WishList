@@ -1,4 +1,4 @@
-import { ApiService } from "./api-service";
+import { ApiService } from "./api-service.js";
 
 let wishCardTemplate = document.getElementById("wish-card-template");
 let wishCardsContainer = document.getElementById("wishes-list-container");
@@ -12,10 +12,9 @@ function reloadWishesList() {
             let card = wishCardTemplate.innerHTML;
 
             card = card.replaceAll("{date}", wish.created);
-            card = card.replaceAll("{type}", user.type);
+            card = card.replaceAll("{type}", wish.type);
 
-            card = `<div class="wish-card">${card}</div>>`
-
+            card = `<div class="wish-card">${card}</div>`
             wishCards.push(card);
         }
 
